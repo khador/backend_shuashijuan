@@ -1,0 +1,738 @@
+{
+  "exam_id": "grade6_semester2_2026_math_week0",
+  "title": "六年级数学质量检测卷",
+  "subject": "math",
+  "visible_date": "2026-05-18",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "fill_in_blank",
+      "stem": "潜水艇现在所在的位置记做$-100$m，如果它再下潜 $40$m，那么它所在的位置记做（ ）m；如果下潜后又上升 $20$m，那么现在的位置是（ ）m。",
+      "blanks": [
+        {
+          "blank_id": "b1",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b2",
+          "is_ordered": true
+        }
+      ],
+      "answer": {
+        "b1": [
+          "-140"
+        ],
+        "b2": [
+          "-120"
+        ]
+      },
+      "analysis": "下潜高度减少用减法：-100 - 40 = -140；上升高度增加用加法：-140 + 20 = -120。",
+      "knowledge_point": "正数和负数",
+      "exam_point": "负数在实际生活中的应用及加减计算"
+    },
+    {
+      "id": "q2",
+      "type": "fill_in_blank",
+      "stem": "( ) :$8 = 27 \\div$ ( ) $=$ <img src='images/week0/math/image4.jpg' style='height:28px; vertical-align:middle; margin:0 4px;' /> $=$ ( ) \\% $=$ ( ) (折数)。",      "blanks": [
+        {
+          "blank_id": "b1",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b2",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b3",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b4",
+          "is_ordered": true
+        }
+      ],
+      "answer": {
+        "b1": [
+          ""
+        ],
+        "b2": [
+          ""
+        ],
+        "b3": [
+          ""
+        ],
+        "b4": [
+          ""
+        ]
+      },
+      "analysis": "原题干存在OCR遗漏导致无法解答，主要考查比、除法、分数、百分数和折扣之间的互化。",
+      "knowledge_point": "数与代数",
+      "exam_point": "比、分数、除法、百分数、折扣的互化"
+    },
+    {
+      "id": "q3",
+      "type": "fill_in_blank",
+      "stem": "3 吨 20 千克 = ( ) 吨 ; 1 时 28 分 = ( ) 时 ; $\\frac{3}{8}$ 平方米 = ( ) 平方分米。",
+      "blanks": [
+        {
+          "blank_id": "b1",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b2",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b3",
+          "is_ordered": true
+        }
+      ],
+      "answer": {
+        "b1": [
+          "3.02"
+        ],
+        "b2": [
+          "1\\frac{7}{15}"
+        ],
+        "b3": [
+          ""
+        ]
+      },
+      "analysis": "1吨=1000千克，故20千克=0.02吨；1时=60分，28分=28/60时化简为7/15时；第三空因原卷数字缺失无法计算。",
+      "knowledge_point": "常见的量与单位换算",
+      "exam_point": "质量单位、时间单位及面积单位的换算"
+    },
+    {
+      "id": "q4",
+      "type": "fill_in_blank",
+      "stem": "甲用去 $\\frac{2}{5}$, 乙用去 $\\frac{3}{4}$, 此时剩余的甲与乙相等, 则原来甲:乙 = ( )。",
+      "blanks": [
+        {
+          "blank_id": "b1",
+          "is_ordered": true
+        }
+      ],
+      "answer": {
+        "b1": [
+          ""
+        ]
+      },
+      "analysis": "原卷确实分数比例导致无法计算，通常解法为通过设剩余量相等，反推原量之比。",
+      "knowledge_point": "比和比例",
+      "exam_point": "根据分率求原来两个量的比"
+    },
+    {
+      "id": "q5",
+      "type": "fill_in_blank",
+      "stem": "如果 $\\frac{2}{3}$x - $\\frac{5}{9}$y = 1.5y$（$x$、$y$ 均不为 $0$），那么 $x$、$y$ 成（ ）。",
+      "blanks": [
+        {
+          "blank_id": "b1",
+          "is_ordered": true
+        }
+      ],
+      "answer": {
+        "b1": [
+          "正比例"
+        ]
+      },
+      "analysis": "化简等式得 x = 2.5y，即 x/y = 2.5（一定），商一定说明成正比例关系。",
+      "knowledge_point": "正比例和反比例",
+      "exam_point": "正比例意义的判断"
+    },
+    {
+      "id": "q6",
+      "type": "fill_in_blank",
+      "stem": "一个圆锥的底面半径变成原来的 $3$ 倍，高变成原来的$\\frac{1}{4}$，新的圆锥与原来的圆锥的体积比是（ ）。",
+      "blanks": [
+        {
+          "blank_id": "b1",
+          "is_ordered": true
+        }
+      ],
+      "answer": {
+        "b1": [
+          ""
+        ]
+      },
+      "analysis": "圆锥体积公式为V=1/3πr²h，底面半径变为3倍则面积变为9倍，需结合高的变化计算体积比。",
+      "knowledge_point": "圆锥",
+      "exam_point": "圆锥体积公式中半径与高变化对体积的影响"
+    },
+    {
+      "id": "q7",
+      "type": "fill_in_blank",
+      "stem": "7. 在圆的面积推导过程中，把圆转化为三角形，已知圆的半径是 10。第一步： $10\\times2\\times3.14\\div4=15.7$ ；第二步： $10\\times4=40$ ：则第三步：（ ）。<br/><img src='images/week0/math/math_week0_q7.jpg' style='max-width:200px; display:block; margin:10px auto;' />",
+      "blanks": [
+        {
+          "blank_id": "b1",
+          "is_ordered": true
+        }
+      ],
+      "answer": {
+        "b1": [
+          "15.7 \\times 40 \\div 2 = 314"
+        ]
+      },
+      "analysis": "将圆转化为三角形时，15.7为三角形的底，40为对应的高，最后一步应当利用三角形面积公式底乘高除以2计算最终面积。",
+      "knowledge_point": "圆",
+      "exam_point": "圆的面积推导过程与转化思想"
+    },
+    {
+      "id": "q8",
+      "type": "fill_in_blank",
+      "stem": "张叔叔将 $3.2$ 万元以整存整取的方式存入银行，定期 $3$ 个月。如果年利率是 $2.1\\%$，那么到期后可得利息（ ）元。",
+      "blanks": [
+        {
+          "blank_id": "b1",
+          "is_ordered": true
+        }
+      ],
+      "answer": {
+        "b1": [
+          "168"
+        ]
+      },
+      "analysis": "利息 = 本金 × 利率 × 存期。3.2万元=32000元，3个月=0.25年，利息 = 32000 × 2.1% × 0.25 = 168元。",
+      "knowledge_point": "百分数",
+      "exam_point": "利息的计算"
+    },
+    {
+      "id": "q9",
+      "type": "fill_in_blank",
+      "stem": "某商店以 $120$ 元的价格出售了两条裤子，一条裤子赚 $20\\%$，一条裤子亏 $20\\%$。卖出这两条裤子商家是（ ）（赚或亏），赚或亏（ ）元。",
+      "blanks": [
+        {
+          "blank_id": "b1",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b2",
+          "is_ordered": true
+        }
+      ],
+      "answer": {
+        "b1": [
+          "亏"
+        ],
+        "b2": [
+          "10"
+        ]
+      },
+      "analysis": "赚钱的裤子进价为120÷(1+20%)=100元，亏钱的裤子进价为120÷(1-20%)=150元。总进价250元，总售价240元，因此亏了10元。",
+      "knowledge_point": "百分数",
+      "exam_point": "利润与折扣相关的实际应用"
+    },
+    {
+      "id": "q10",
+      "type": "fill_in_blank",
+      "stem": "10. 一个底面积是 40 $\\text{cm}^2$ 的圆柱，斜着截去了一段后，剩下的图形如下图。<br/><img src='images/week0/math/math_week0_q10.jpg' style='max-width:120px; display:block; margin:10px auto;' />剩下的图形的体积是 ( ) $\\text{cm}^3$。", 
+      "blanks": [
+        {
+          "blank_id": "b1",
+          "is_ordered": true
+        }
+      ],
+      "answer": {
+        "b1": [
+          ""
+        ]
+      },
+      "analysis": "需借助图形中标注的尺寸信息，通常可将两个同样的斜截圆柱拼成一个完整的圆柱来计算其体积，原题因无图像具体高度暂无法计算。",
+      "knowledge_point": "圆柱",
+      "exam_point": "斜截圆柱体积的求法"
+    },
+    {
+      "id": "q11",
+      "type": "fill_in_blank",
+      "stem": "11. 在正方形铁皮上剪下一个圆形和扇形，恰好围成一个圆锥模型（如图）。如果圆的半径为 $r$，扇形的半径为 $R$，那么 $r:R =$ ( )。<br/><img src='images/week0/math/math_week0_q11.jpg' style='max-width:280px; display:block; margin:15px auto;' />",
+      "blanks": [
+        {
+          "blank_id": "b1",
+          "is_ordered": true
+        }
+      ],
+      "answer": {
+        "b1": [
+          ""
+        ]
+      },
+      "analysis": "原题具体数值缺失导致无法计算结论。通常此类题目考查圆锥底面周长与展开扇形弧长的相等关系。",
+      "knowledge_point": "圆锥",
+      "exam_point": "圆锥的展开图及其底面和侧面的关系"
+    },
+    {
+      "id": "q12",
+      "type": "fill_in_blank",
+      "stem": "12. 将侧面积是 $50\\pi$ 平方厘米的圆柱体，切拼成一个近似的长方体，表面积比原来增加（ ）平方厘米。<br/><img src='images/week0/math/math_week0_q12.png' style='max-width:280px; display:block; margin:15px auto;' />",
+      "blanks": [
+        {
+          "blank_id": "b1",
+          "is_ordered": true
+        }
+      ],
+      "answer": {
+        "b1": [
+          "50"
+        ]
+      },
+      "analysis": "切拼成长方体后，增加的表面积是两个以圆柱的底面半径为宽、高为长的长方形面积，即 $2rh$。因为圆柱侧面积 $S = 2\\pi rh = 50\\pi$，所以 $2rh = 50$。",
+      "knowledge_point": "圆柱",
+      "exam_point": "圆柱切拼成长方体后的表面积变化"
+    },
+    {
+      "id": "q13",
+      "type": "fill_in_blank",
+      "stem": "24 个外观相同的零件，有一个次品比其他零件要轻，用天平至少称（ ）次保证可以找出次品。",
+      "blanks": [
+        {
+          "blank_id": "b1",
+          "is_ordered": true
+        }
+      ],
+      "answer": {
+        "b1": [
+          "3"
+        ]
+      },
+      "analysis": "根据找次品的规律，3的平方小于24且24小于等于3的立方，所以至少需要称 3 次。",
+      "knowledge_point": "数学广角",
+      "exam_point": "找次品问题的最优策略"
+    },
+    {
+      "id": "q14",
+      "type": "fill_in_blank",
+      "stem": "已知比例尺 $1:2000$，图上面积是 9$\\text{cm}^2$，实际面积是（ ）$\\text{m}^2$。",
+      "blanks": [
+        {
+          "blank_id": "b1",
+          "is_ordered": true
+        }
+      ],
+      "answer": {
+        "b1": [
+          ""
+        ]
+      },
+      "analysis": "面积比是比例尺的平方，即 $1:4000000$。由于原题OCR缺失单位（通常图上为平方厘米，实际为平方米或公顷），故无法给出确切数值答案。",
+      "knowledge_point": "比例",
+      "exam_point": "比例尺在面积计算中的应用"
+    },
+    {
+      "id": "q15",
+      "type": "drawing",
+      "stem": "15. 用阴影表示出<img src='images/week0/math/math_week0_q15_1.jpg' style='max-width:280px; display:block; margin:15px auto;' />计算过程。<br/><img src='images/week0/math/math_week0_q15_2.jpg' style='max-width:280px; display:block; margin:15px auto;' />",
+      "answer": [],
+      "analysis": "原文档缺失需要表示的具体算式，需依据原卷图形进行相应的分数乘法或除法的网格涂黑操作。",
+      "knowledge_point": "分数乘法/除法",
+      "exam_point": "利用图形表示分数的计算过程"
+    },
+    {
+      "id": "q16",
+      "type": "fill_in_blank",
+      "stem": "16. 两根一样的彩带，一根平均分成 4 份，一根平均分成 5 份，现在把两根彩带如下摆放长度是 84 厘米，一根彩带的长度是（ ）厘米。<br/><img src='images/week0/math/math_week0_q16.jpg' style='max-width:280px; display:block; margin:15px auto;' />",
+      "blanks": [
+        {
+          "blank_id": "b1",
+          "is_ordered": true
+        }
+      ],
+      "answer": {
+        "b1": [
+          ""
+        ]
+      },
+      "analysis": "因缺失具体的摆放图示（无法确定两根彩带如何重叠及重叠部分占总长的比例），故无法进行下一步计算。",
+      "knowledge_point": "分数与代数",
+      "exam_point": "结合图形的分数实际应用题"
+    },
+    {
+      "id": "q17",
+      "type": "multiple_choice",
+      "stem": "17. 一道乘法竖式题，相同的字母表示相同的数，则 A、B 两部分的大小为（ ）。<br/><img src='images/week0/math/math_week0_q17.jpg' style='max-width:280px; display:block; margin:15px auto;' />",
+      "options": {
+        "A": "A＞B",
+        "B": "A＜B",
+        "C": "A＝B",
+        "D": "无法判断"
+      },
+      "answer": [
+        "D"
+      ],
+      "analysis": "原卷确实竖式图，无法推导A与B的具体数值关系，但在无图情况下只能选择无法判断。",
+      "knowledge_point": "整数乘法",
+      "exam_point": "竖式谜题推理"
+    },
+    {
+      "id": "q18",
+      "type": "multiple_choice",
+      "stem": "下列图形是按一定比例缩小的，x＝（ ）。<br/><img src='images/week0/math/math_week0_q18.jpg' style='max-width:280px; display:block; margin:15px auto;' />",
+      "options": {
+        "A": "10",
+        "B": "9.5",
+        "C": "8",
+        "D": "7.5"
+      },
+      "answer": [],
+      "analysis": "原卷缺失图形及其边长数据，无法根据比例关系求出 x 的值。",
+      "knowledge_point": "图形的放大与缩小",
+      "exam_point": "根据相似比求解未知边长"
+    },
+    {
+      "id": "q19",
+      "type": "multiple_choice",
+      "stem": "从圆柱的正面看，看到的轮廓是一个正方形，说明圆柱的（ ）相等。",
+      "options": {
+        "A": "底面半径和高",
+        "B": "底面积和高",
+        "C": "底面直径和高",
+        "D": "底面周长和高"
+      },
+      "answer": [
+        "C"
+      ],
+      "analysis": "圆柱的正视图是一个长方形，长和宽分别是圆柱的底面直径和高。当正视图为正方形时，说明底面直径等于高。",
+      "knowledge_point": "圆柱",
+      "exam_point": "圆柱的三视图及其特征"
+    },
+    {
+      "id": "q20",
+      "type": "multiple_choice",
+      "stem": "下列各题中的两个量成反比例关系的是（ ）。",
+      "options": {
+        "A": "《指导丛书》的单价一定，订购的总价与订购的数量",
+        "B": "甲、乙两地的路程一定，汽车行驶的平均速度和时间",
+        "C": "比例尺一定，两地的实际距离和图上距离",
+        "D": "书的总页数一定，已读的页数和未读的页数"
+      },
+      "answer": [
+        "B"
+      ],
+      "analysis": "路程 = 速度 × 时间，当路程一定时，速度和时间的乘积一定，二者成反比例关系。",
+      "knowledge_point": "正比例和反比例",
+      "exam_point": "反比例意义及判断方法"
+    },
+    {
+      "id": "q21",
+      "type": "multiple_choice",
+      "stem": "甲和乙分别在同一家银行存了 $24000$ 元和 $36000$ 元，都是定期一年，一年后甲领到了 $360$ 元利息，则下列说法正确的是（ ）。",
+      "options": {
+        "A": "甲领到的利息是乙的 $\\frac{4}{3}$ ",
+        "B": "甲领到的利息比乙少二成五",
+        "C": "甲领到的利息是乙的 $\\frac{3}{4}$ ",
+        "D": "乙领到的利息是 $540$ 元"
+      },
+      "answer": [
+        "D"
+      ],
+      "analysis": "甲的年利率为 $360 \\div 24000 = 1.5\\%$；乙的利息应当为 $36000 \\times 1.5\\% = 540$ 元。甲的利息是乙的 $\\frac{2}{3}$，比乙少 $\\frac{1}{3}$（不是二成五）。故D正确。",
+      "knowledge_point": "百分数",
+      "exam_point": "利息的计算与百分数应用"
+    },
+    {
+      "id": "q22",
+      "type": "multiple_choice",
+      "stem": "22. 欢欢做了一个圆柱形容器和几个圆锥形容器，大小如下图所示。<br/><img src='images/week0/math/math_week0_q22_stem.jpg' style='max-width:150px; display:block; margin:10px auto;' />（单位：厘米）将圆柱形容器的水倒入圆锥形容器 ( ) 里，正好倒满。",
+      "options": {
+        "A": "<img src='images/week0/math/math_week0_q22_A.png' style='max-height:100px; vertical-align:middle;' />",
+        "B": "<img src='images/week0/math/math_week0_q22_B.png' style='max-height:100px; vertical-align:middle;' />",
+        "C": "<img src='images/week0/math/math_week0_q22_C.png' style='max-height:100px; vertical-align:middle;' />",
+        "D": "<img src='images/week0/math/math_week0_q22_D.png' style='max-height:100px; vertical-align:middle;' />"
+      },
+      "answer": [
+        "D"
+      ],
+      "analysis": "考查圆柱与圆锥的体积关系。圆柱体积 $V = S h$。若要正好倒满圆锥，需满足圆锥体积 $\\frac{1}{3} S_{锥} h_{锥} = S_{柱} h_{柱}$。因原文档图片及选项数据缺失，无法具体判断。",
+      "knowledge_point": "圆柱与圆锥",
+      "exam_point": "圆柱与圆锥的体积关系"
+    },
+    {
+      "id": "q23",
+      "type": "multiple_choice",
+      "stem": "有一个等腰三角形的两边比是 $3\\colon7$，这个等腰三角形的周长是（ ）。",
+      "options": {
+        "A": "13",
+        "B": "15",
+        "C": "17",
+        "D": "13 或 17"
+      },
+      "answer": [
+        "C"
+      ],
+      "analysis": "根据三角形三边关系，两边之和必须大于第三边。若边长为3和7，第三边为3时（3+3<7）不能构成三角形；因此三边只能是7、7、3。周长为 $7+7+3=17$。",
+      "knowledge_point": "图形与几何",
+      "exam_point": "等腰三角形的特征及三角形三边关系"
+    },
+    {
+      "id": "q24",
+      "type": "multiple_choice",
+      "stem": "甲乙两个容积相同的瓶子分别装满盐水，已知甲瓶中盐、水的比是 $2\\colon9$，乙瓶中盐、水的比是 $3\\colon10$，现在把甲、乙两瓶水混合在一起，则混合盐水中，盐与盐水的比是（ ）。",
+      "options": {
+        "A": "$5\\colon24$",
+        "B": "$5\\colon19$",
+        "C": "$24\\colon5$",
+        "D": "$59\\colon286$"
+      },
+      "answer": [],
+      "analysis": "此题考查混合浓度问题，需统一两瓶盐水的总量（如设总容积为各比例份数和的最小公倍数），再分别求出盐的份数相加。因原卷比例数据缺失无法计算。",
+      "knowledge_point": "比和比例",
+      "exam_point": "比的实际应用（浓度混合问题）"
+    },
+    {
+      "id": "q25",
+      "type": "fill_in_blank",
+      "stem": "直接写出得数。<br>$0.46+3.8=$ （ ） <br>$0.125\\times2.4=$ （ ） <br>$42\\div0.7=$ （ ） <br>$2.5\\times0\\div 3\\frac{2}{3} + 3=$ （ ）<br>$8\\div \\frac{2}{9}=$ （ ） <br>$2.5-\\frac{1}{5}=$ （ ） <br>$5-\\frac{3}{4}=$ （ ）<br>$45\\%+1.51=$ （ ） <br>$0.72\\times \\frac{5}{9}=$ （ ） <br>$\\frac{4}{7}\\times\\frac{21}{8}=$ （ ） <br>$4.25\\times99+4.25=$ （ ）",
+      "blanks": [
+        {
+          "blank_id": "b1",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b2",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b3",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b4",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b5",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b6",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b7",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b8",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b9",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b10",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b11",
+          "is_ordered": true
+        }
+      ],
+      "answer": {
+        "b1": [
+          "4.26"
+        ],
+        "b2": [
+          "0.3"
+        ],
+        "b3": [
+          "60"
+        ],
+        "b4": [
+          "3"
+        ],
+        "b5": [
+          "33"
+        ],
+        "b6": [
+          "2.1"
+        ],
+        "b7": [
+          "4.25"
+        ],
+        "b8": [
+          "1.96"
+        ],
+        "b9": [
+          "0.4"
+        ],
+        "b10": [
+          "1.5"
+        ],
+        "b11": [
+          "425"
+        ]
+      },
+      "analysis": "考查小数、分数、百分数的基本四则运算及简便计算（如乘法分配律 $4.25\\times99+4.25 = 4.25\\times(99+1)=425$）。",
+      "knowledge_point": "数的运算",
+      "exam_point": "小数、分数、百分数的口算与简便运算"
+    },
+    {
+      "id": "q26",
+      "type": "fill_in_blank",
+      "stem": "用喜欢的方法计算。<br>（1） $(1.5-1.5\\times0.6)\\div0.8=$ （ ）<br>（2） $\\frac{12}{13}\\times[1.75-(\\frac{5}{12}+0.25)]=$ （ ）<br>（3） $11\\div(\\frac{3}{4}+\\frac{1}{6})=$ （ ）<br>（4） $3.75\\times\\frac{2}{7}+\\frac{5}{7}\\times3.75-3\\frac{3}{4}=$ （ ）",
+      "blanks": [
+        {
+          "blank_id": "b1",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b2",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b3",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b4",
+          "is_ordered": true
+        }
+      ],
+      "answer": {
+        "b1": [
+          "0.75"
+        ],
+        "b2": [
+          "1"
+        ],
+        "b3": [
+          "12"
+        ],
+        "b4": [
+          "0"
+        ]
+      },
+      "analysis": "第（1）小题：运用乘法分配律，$(1.5-1.5\\times0.6)\\div0.8 = 1.5\\times(1-0.6)\\div0.8 = 1.5\\times0.4\\div0.8 = 0.75$。<br>第（2）小题：括号内转化为分数计算，$[\\frac{7}{4}-(\\frac{5}{12}+\\frac{3}{12})] = \\frac{7}{4}-\\frac{2}{3} = \\frac{13}{12}$，最后 $\\frac{12}{13}\\times\\frac{13}{12}=1$。<br>第（3）小题：先算括号内 $\\frac{9}{12}+\\frac{2}{12}=\\frac{11}{12}$，再算 $11\\div\\frac{11}{12}=12$。<br>第（4）小题：运用乘法分配律提取公共项 3.75（即 $3\\frac{3}{4}$），$3.75\\times(\\frac{2}{7}+\\frac{5}{7}-1) = 3.75\\times0=0$。",
+      "knowledge_point": "数的运算",
+      "exam_point": "四则混合运算与简便计算"
+    },
+    {
+      "id": "q27",
+      "type": "fill_in_blank",
+      "stem": "解方程（或解比例）。<br>（1） $\\frac{3}{4}\\colon x = 3\\colon12$ （解得 $x=$ （ ））<br>（2） $\\frac{4}{9}\\times2-2x = \\frac{1}{3}$ （解得 $x=$ （ ））",
+      "blanks": [
+        {
+          "blank_id": "b1",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b2",
+          "is_ordered": true
+        }
+      ],
+      "answer": {
+        "b1": [
+          "3"
+        ],
+        "b2": [
+          "\\frac{5}{18}"
+        ]
+      },
+      "analysis": "第（1）小题：根据比例的基本性质，内项之积等于外项之积，$3x = \\frac{3}{4}\\times12$，$3x = 9$，解得 $x=3$。<br>第（2）小题：先计算乘法，$\\frac{8}{9}-2x = \\frac{1}{3}$，移项得 $2x = \\frac{8}{9}-\\frac{3}{9}$，即 $2x = \\frac{5}{9}$，解得 $x = \\frac{5}{18}$。",
+      "knowledge_point": "方程与比例",
+      "exam_point": "解方程与解比例式"
+    },
+    {
+      "id": "q28",
+      "type": "fill_in_blank",
+      "stem": "操作题。<br>（1）画出 $\\triangle ABC$ 绕 $C$ 点逆时针旋转 $90^\\circ$ 后得到的图形。<br>（2）若 $B$ 点的位置用数对 $(8, 5)$ 表示，那么旋转后的 $B$ 点的位置该用数对（ ）表示。<br>（3）画出以直线 $L$ 为对称轴的①号三角形的轴对称图形②。<br>（4）把图①按 $2\\colon1$ 的比画在合适的位置，记作三角形③。若网格上每个小正方形的边长为 $1$ 厘米，此时图③的面积是（ ）。<br/><img src='images/week0/math/math_week0_q28.png' style='max-width:150px; display:block; margin:10px auto;' />",
+      "blanks": [
+        {
+          "blank_id": "b1",
+          "is_ordered": true
+        },
+        {
+          "blank_id": "b2",
+          "is_ordered": true
+        }
+      ],
+      "answer": {
+        "b1": [
+          ""
+        ],
+        "b2": [
+          ""
+        ]
+      },
+      "analysis": "此题考查图形的旋转、平移、轴对称、放大以及数对。因缺失原始网格背景图和起始点坐标，无法得出旋转后坐标及放大后的确切面积数值。",
+      "knowledge_point": "图形的运动",
+      "exam_point": "旋转、轴对称、图形的放大与缩小、数对"
+    },
+    {
+      "id": "q29",
+      "type": "drawing",
+      "stem": "小明以 $8$ 千米/小时的速度骑车从家出发，先往北偏西 $60^\\circ$ 方向行驶 $30$ 分钟到达图书馆，再往南偏西 $30^\\circ$ 方向行驶 $15$ 分钟后到达少年宫，请在图中画出小明的行驶路线。<br/><img src='images/week0/math/math_week0_q29.png' style='max-width:150px; display:block; margin:10px auto;' />",
+      "answer": [],
+      "analysis": "先计算距离：$8 \\times 0.5 = 4$ 千米（到图书馆），$8 \\times 0.25 = 2$ 千米（到少年宫）。结合图上比例尺，确定方向角和图上距离进行作图即可。",
+      "knowledge_point": "方向与位置",
+      "exam_point": "根据方向和距离在图上标出路线"
+    },
+    {
+      "id": "q30",
+      "type": "essay",
+      "stem": "有一种酒瓶，容积为 $286$ 立方厘米。当瓶口向上时，瓶内酒的高度是 $18$ 厘米，当瓶口向下时，余下部分的高度是 $4$ 厘米，瓶内酒有多少毫升？<br/><img src='images/week0/math/math_week0_q30.png' style='max-width:150px; display:block; margin:10px auto;' />",
+      "answer": [
+        "234毫升"
+      ],
+      "analysis": "酒瓶的总容积等于正放时酒的体积加上倒放时上方空气的体积。设酒瓶底面积为 $S$，则 $18S + 4S = 286$，解得 $S=13$。酒的体积为 $13 \\times 18 = 234$ 立方厘米，即 $234$ 毫升。",
+      "knowledge_point": "体积与容积",
+      "exam_point": "利用等积变形思想求不规则物体的体积"
+    },
+    {
+      "id": "q31",
+      "type": "essay",
+      "stem": "一项工程，甲队单独做 $10$ 天完成，乙队单独做 $15$ 天完成。甲、乙两队合作，几天能完成这项工程的 $\\frac{2}{3}$ ？",
+      "answer": [
+        "由于缺失具体的分数要求，若假设为完成整项工程，则需要 6 天。"
+      ],
+      "analysis": "甲每天完成工作总量的 $\\frac{1}{10}$，乙每天完成 $\\frac{1}{15}$。两队合作每天完成 $\\frac{1}{10} + \\frac{1}{15} = \\frac{1}{6}$。若完成整项工程，需要 $1 \\div \\frac{1}{6} = 6$ 天。原卷最后缺少具体的分率条件。",
+      "knowledge_point": "分数除法应用题",
+      "exam_point": "工程问题中工作效率与工作时间的计算"
+    },
+    {
+      "id": "q32",
+      "type": "essay",
+      "stem": "小东家的客厅是正方形，用边长 $0.6$ 分米的方砖，需要 $100$ 块，如果用面积 $0.5$ 平方分米的方砖，需要多少块？",
+      "answer": [
+        "72块"
+      ],
+      "analysis": "客厅总面积等于单块方砖面积乘以数量。原方砖面积为 $0.6 \\times 0.6 = 0.36$ 平方分米，客厅总面积为 $0.36 \\times 100 = 36$ 平方分米。换用新方砖所需数量为 $36 \\div 0.5 = 72$ 块。",
+      "knowledge_point": "面积与图形",
+      "exam_point": "正方形面积计算及实际铺砖问题中的等量代换"
+    },
+    {
+      "id": "q33",
+      "type": "essay",
+      "stem": "33. 六年级有 $3$ 个班，已知（1）班有 $48$ 人，______，六年级共有学生多少人？（选择一个你认为合适的条件，将序号填在横线上，并解答）<br>A. （1）班人数比其他两班总数的 $\\frac{4}{9}$ 少 $12$ 人<br>B. （1）班 $\\colon$ （2）班 $= 6\\colon7$，（2）班 $\\colon$ （3）班 $= 14\\colon13$<br>C. （1）班人数比六年级总数的 $\\frac{1}{3}$ 多 $8$ 人",
+      "answer": [
+        "此题为开放性解答题，选A、B、C皆可，对应答案如下：<br>选 A：六年级共有 183 人。<br>选 B：六年级共有 156 人。<br>选 C：六年级共有 120 人。"
+      ],
+      "analysis": "这是一道条件开放题。解法如下：<br><b>若选 A：</b>其他两班总人数为 $(48+12) \\div \\frac{4}{9} = 135$（人），六年级总人数为 $135+48=183$（人）。<br><b>若选 B：</b>统一连比得到，（1）班 $\\colon$ （2）班 $\\colon$ （3）班 $= 12\\colon14\\colon13$。总份数为 $12+14+13=39$ 份，每份 $48 \\div 12 = 4$（人），六年级总人数为 $39 \\times 4 = 156$（人）。<br><b>若选 C：</b>六年级总人数为 $(48-8) \\div \\frac{1}{3} = 120$（人）。",
+      "knowledge_point": "比和比例、分数乘除法应用题",
+      "exam_point": "条件开放性问题、分数应用题及连比的转换"
+    },
+    {
+      "id": "q34",
+      "type": "essay",
+      "stem": "一张长方形铁皮，从中剪下一个圆和一个长方形，正好可以做成一个无盖圆柱形铁皮，求这个圆柱形铁皮的表面积？<br/><img src='images/week0/math/math_week0_q34.png' style='max-width:150px; display:block; margin:10px auto;' />",
+      "answer": [
+        "因原卷缺失具体的尺寸数据或配图，无法计算具体数值。"
+      ],
+      "analysis": "这道经典题型通常会配有一张标注了原长方形长、宽，或者剪下部分尺寸的示意图。做成无盖圆柱后，表面积等于一个底面积（剪下的圆）加上侧面积（剪下的长方形）。因原文档无具体数值，无法作答。",
+      "knowledge_point": "圆柱",
+      "exam_point": "圆柱表面积及展开图的实际应用"
+    },
+    {
+      "id": "q35",
+      "type": "essay",
+      "stem": "欢欢与乐乐同时从学校去图书馆，欢欢一开始以 $6$ 千米/时的速度步行，中途改为速度 $48$ 千米/时的出租车。乐乐以 $12$ 千米/时的速度骑自行车，结果欢欢比乐乐提前 $10$ 分钟到达。学校离图书馆有多远？<br/><img src='images/week0/math/math_week0_q35.png' style='max-width:150px; display:block; margin:10px auto;' />",
+      "answer": [
+        "题目疑似缺失“中途”的具体含义（如距离的一半或时间的一半），无法得出唯一解。"
+      ],
+      "analysis": "若假设“中途”为路程的一半，则欢欢走一半路程用时就已经与乐乐骑完全程用时相等，加上坐出租车的时间，欢欢必然晚到，与题干“提前 10 分钟”矛盾。因此题干疑似缺失了某段具体路程或时间的条件说明。",
+      "knowledge_point": "行程问题",
+      "exam_point": "分段行程与速度、时间、路程的综合应用"
+    }
+  ]
+}
