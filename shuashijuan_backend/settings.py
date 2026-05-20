@@ -1,3 +1,5 @@
+# settings.py
+
 """
 Django settings for shuashijuan_backend project.
 
@@ -21,12 +23,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+# 注意：在生产环境中，SECRET_KEY 应该通过环境变量等方式安全地管理。
 SECRET_KEY = 'django-insecure-rb@)=*6lecf1rg+x^6*xuc+7j=lnrvy_9#m&oqhcko1$t8qik0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# 默认关闭 DEBUG，在 settings_local.py 中为开发环境开启
+DEBUG = False
 
-ALLOWED_HOSTS = ['116.62.144.210', 'localhost', '127.0.0.1']
+# 默认为空，在 settings_local.py 中为服务器环境配置
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -78,15 +83,11 @@ WSGI_APPLICATION = 'shuashijuan_backend.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
-
+# 默认使用 SQLite，在 settings_local.py 中为服务器环境配置 MySQL
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'my_project_db',
-        'USER': 'django',
-        'PASSWORD': 'DjangoPass123!', # 填入你之前在数据库设置的密码
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -113,16 +114,17 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = 'zh-hans'      # 使用简体中文
-TIME_ZONE = 'Asia/Shanghai'    # 使用中国标准时间（UTC+8）
-USE_I18N = True                # 启用国际化
-USE_TZ = True                  # 启用时区支持（推荐保持为 True）
+LANGUAGE_CODE = 'zh-hans'
+TIME_ZONE = 'Asia/Shanghai'
+USE_I18N = True
+USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+# STATIC_ROOT 在服务器 settings_local.py 中定义
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -130,11 +132,13 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+# Media files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# 允许携带 Cookie
+
+# CORS settings
 CORS_ALLOW_CREDENTIALS = True
-
-# 开发环境下，允许你的 React 本地服务跨域访问 (根据你的 React 实际端口修改，通常是 3000 或 5173)
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
@@ -142,44 +146,30 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",
 ]
 
-# 如果你想图省事，开发阶段直接允许所有跨域（上服务器前记得改回来）
-# CORS_ALLOW_ALL_ORIGINS = True
-
-# 指定自定义的用户模型
+# Authentication
 AUTH_USER_MODEL = 'users.User'
 
-
-# DRF 全局配置
+# DRF settings
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
-    # MVP 阶段建议全局开启认证，个别接口（如登录）豁免
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     ),
 }
 
-# (可选) JWT 过期时间等基础配置
+# JWT settings
 from datetime import timedelta
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(days=1), # 方便开发，设长一点
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
 
 
-"""
-Username: xuelixing
-Email address: xuelixing@xuelixing.com
-Password: xinglixue123
-"""
-
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-
-
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# --- 从 settings_local.py 加载本地/环境特定的设置 ---
+try:
+    from .settings_local import *
+except ImportError:
+    pass
