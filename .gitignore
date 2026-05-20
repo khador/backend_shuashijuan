@@ -1,0 +1,60 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+
+# === Virtual Environment (重点！) ===
+venv/
+env/
+ENV/
+.env/
+.gitenv/
+.venv/
+
+# === Django specific ===
+*.log
+*.pot
+*.po
+*.mo
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+static/CACHE/
+*.swp
+*.swo
+
+# === IDE / Editor files ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# === OS generated files ===
+.DS_Store
+.Trashes
+ehthumbs.db
+desktop.ini
+
+# === Pip ===
+pip-log.txt
+pip-delete-this-directory.txt
+
+# === Jupyter Notebook ===
+.ipynb_checkpoints/
+
+# === pytest ===
+.pytest_cache/
+.coverage
+htmlcov/
+
+# === Build artifacts ===
+dist/
+build/
+*.egg-info/
+MANIFEST
+
+# === Docker ===
+docker-compose.override.yml
