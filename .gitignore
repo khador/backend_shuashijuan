@@ -58,3 +58,14 @@ MANIFEST
 
 # === Docker ===
 docker-compose.override.yml
+
+# === 环境特定配置 ===
+settings_local.py
+.env
+secrets.json
+
+# === 临时文件 ===
+*.tmp
+*.bak
+*.zip
+*.rar

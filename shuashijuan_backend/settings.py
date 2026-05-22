@@ -18,13 +18,44 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-# 注意：在生产环境中，SECRET_KEY 应该通过环境变量等方式安全地管理。
-SECRET_KEY = 'django-insecure-rb@)=*6lecf1rg+x^6*xuc+7j=lnrvy_9#m&oqhcko1$t8qik0'
+# 🔒 SECRET_KEY 配置 - 安全性关键设置
+#
+# 安全说明：
+# SECRET_KEY 用于加密用户会话、生成CSRF令牌、签名JWT令牌等敏感操作
+# 如果SECRET_KEY泄露，攻击者可以：
+#   1. 伪造任意用户会话（冒充其他用户登录）
+#   2. 生成有效的密码重置链接（修改其他用户密码）
+#   3. 解密和伪造JWT令牌
+#
+# 项目隔离说明：
+# 由于服务器会部署多个Django项目，每个项目必须使用独立的SECRET_KEY
+# 为了避免环境变量冲突，使用项目特定的环境变量名称
+#
+# 环境变量命名规则：
+# - 项目名称：shuashijuan_backend
+# - 环境变量：DJANGO_SHUASHIJUAN_SECRET_KEY
+#
+# 其他Django项目应该使用自己的环境变量：
+# - 项目B：DJANGO_PROJECT_B_SECRET_KEY
+# - 项目C：DJANGO_PROJECT_C_SECRET_KEY
+#
+# 最佳实践：
+# - 生产环境必须通过环境变量设置SECRET_KEY
+# - 不同项目使用不同的环境变量名称
+# - 不同环境（开发/测试/生产）使用不同的SECRET_KEY
+# - 不要将SECRET_KEY提交到版本控制系统
+# - 定期更换SECRET_KEY（需要重新生成所有会话和令牌）
+
+import os
+# 🔒 使用项目特定的环境变量名，避免多项目冲突
+# 项目名称：shuashijuan_backend → 环境变量：DJANGO_SHUASHIJUAN_SECRET_KEY
+SECRET_KEY = os.environ.get('DJANGO_SHUASHIJUAN_SECRET_KEY', 'django-insecure-rb@)=*6lecf1rg+x^6*xuc+7j=lnrvy_9#m&oqhcko1$t8qik0')
+
+# ⚠️ 警告：默认SECRET_KEY不应该在生产环境使用！
+# 请运维人员务必在生产环境设置 DJANGO_SHUASHIJUAN_SECRET_KEY 环境变量
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # 默认关闭 DEBUG，在 settings_local.py 中为开发环境开启
@@ -32,7 +63,6 @@ DEBUG = False
 
 # 默认为空，在 settings_local.py 中为服务器环境配置
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -44,6 +74,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'drf_spectacular',  # 🔒 添加OpenAPI模式生成器，用于前后端同步
     'corsheaders',
     'exams',
     'users',
@@ -58,7 +89,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    
+
 ]
 
 ROOT_URLCONF = 'shuashijuan_backend.urls'
@@ -80,7 +111,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'shuashijuan_backend.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 # 默认使用 SQLite，在 settings_local.py 中为服务器环境配置 MySQL
@@ -90,7 +120,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -110,7 +139,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
@@ -118,7 +146,6 @@ LANGUAGE_CODE = 'zh-hans'
 TIME_ZONE = 'Asia/Shanghai'
 USE_I18N = True
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
@@ -131,13 +158,18 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
 # Media files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-
 # CORS settings
+# 🔒 CORS配置说明：
+# - 生产环境必须严格限制允许的源
+# - 移除localhost和127.0.0.1等本地地址
+# - 只添加实际的前端域名
+# - 建议使用环境变量配置：os.environ.get('CORS_ALLOWED_ORIGINS', '').split(',')
+#
+# 开发环境配置（可以包含本地地址）：
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
@@ -145,6 +177,53 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
 ]
+
+# 🔒 DRF-Spectacular OpenAPI配置
+#
+# 用途：
+# - 自动生成API文档
+# - 前端可以实时获取API定义
+# - 支持TypeScript类型生成
+# - 保持前后端API同步
+#
+# 前端如何使用：
+# - 访问 /api/schema/ 获取OpenAPI JSON格式文档
+# - 访问 /api/docs/ 查看交互式API文档
+# - 使用openapi-typescript生成TypeScript类型
+SPECTACULAR_SETTINGS = {
+    'TITLE': '刷题系统后端API',
+    'DESCRIPTION': '学生在线刷题系统后端API接口文档',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,  # 不在页面中嵌入schema，避免版本混乱
+
+    # 🔒 安全配置：隐藏敏感信息
+    'SCHEMA_PATH_PREFIX': '/api',
+
+    # 📝 显示配置
+    'SHOW_GENERIC_ERRORS': True,  # 显示通用错误信息
+    'COMPONENT_SPLIT_REQUEST': False,  # 不拆分请求参数
+
+    # 🎯 用户认证配置
+    'SCHEMA_PATH_PREFIX_INSERT': 'v1',  # 版本前缀
+    'AUTHENTICATION_WHITELIST': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
+
+    # 🌐 服务器配置（使用HTTP，开发阶段不需要HTTPS）
+    'SERVERS': [
+        {'url': 'http://localhost:8000', 'description': '本地开发环境'},
+        {'url': 'http://116.62.144.210:8000', 'description': '测试环境服务器'},
+    ],
+
+    # 📊 数据类型映射
+    'DATETIME_COERCION': 'iso8601',
+
+    # 🔧 其他配置
+    'POSTPROCESSING_EXCLUDES': [
+        'rest_framework.request.Request',
+        'rest_framework.response.Response',
+    ],
+}
 
 # Authentication
 AUTH_USER_MODEL = 'users.User'
@@ -157,6 +236,39 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     ),
+
+    # 🔒 API限流配置
+    #
+    # 限流目的：
+    # - 防止API被恶意刷屏或攻击
+    # - 保护服务器资源，避免过载
+    # - 防止暴力破解等攻击
+    #
+    # 限流规则说明：
+    # - 匿名用户（未登录）：每天100次请求
+    # - 认证用户（已登录）：每天1000次请求
+    # - 提交试卷接口：每小时10次（防止频繁提交）
+    #
+    # 限流原理：
+    # - 基于用户ID和IP地址进行限流
+    # - 超过限制返回429 Too Many Requests
+    # - 超过限制后需要等待限制时间过后才能继续访问
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.AnonRateThrottle',
+        'rest_framework.throttling.UserRateThrottle'
+    ],
+    'DEFAULT_THROTTLE_RATES': {
+        'anon': '100/day',      # 匿名用户每天100次
+        'user': '1000/day',     # 认证用户每天1000次
+        'submit': '10/hour',    # 提交试卷每小时10次（防止频繁提交）
+    },
+
+    # 🔒 异常处理配置
+    # 使用自定义的异常处理器，返回更友好的错误信息
+    'EXCEPTION_HANDLER': 'exams.exceptions.custom_exception_handler',
+
+    # 🔔 添加OpenAPI模式类（用于前后端同步）
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
 # JWT settings
@@ -166,7 +278,6 @@ SIMPLE_JWT = {
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
-
 
 # --- 从 settings_local.py 加载本地/环境特定的设置 ---
 try:
